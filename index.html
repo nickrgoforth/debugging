@@ -16,13 +16,18 @@ body {
 	background-color: black;
 	overflow: hidden;
 	touch-action: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
 #canvas {
 	display: block;
+	max-width: 640px;
+	max-height: 480px;
 	width: 640px;
 	height: 480px;
-	margin: 0 auto; /* Centers the canvas */
 }
 
 #canvas:focus {
