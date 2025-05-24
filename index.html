@@ -20,14 +20,15 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	max-width: 640px;
+	max-height: 480px;
+	margin: 0 auto;
 }
 
 #canvas {
 	display: block;
-	max-width: 640px;
-	max-height: 480px;
-	width: 640px;
-	height: 480px;
+	margin: 0 auto;
+	image-rendering: auto; /* Remove pixelated rendering */
 }
 
 #canvas:focus {
