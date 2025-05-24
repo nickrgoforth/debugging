@@ -16,10 +16,22 @@ body {
 	background-color: black;
 	overflow: hidden;
 	touch-action: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.game-container {
+	width: 640px;
+	height: 480px;
+	border: 1px solid #333;
 }
 
 #canvas {
 	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 #canvas:focus {
@@ -95,9 +107,11 @@ body {
 
 	</head>
 	<body>
-		<canvas id="canvas">
-			Your browser does not support the canvas tag.
-		</canvas>
+		<div class="game-container">
+			<canvas id="canvas">
+				Your browser does not support the canvas tag.
+			</canvas>
+		</div>
 
 		<noscript>
 			Your browser does not support JavaScript.
@@ -111,7 +125,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":434368,"index.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":434368,"index.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -217,4 +231,3 @@ const engine = new Engine(GODOT_CONFIG);
 		</script>
 	</body>
 </html>
-
